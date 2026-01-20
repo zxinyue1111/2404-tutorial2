@@ -7,11 +7,11 @@ class Character {
 
 		//member functions
 		void takeDamage(int damage);
-		int strike();
+		int strike() const;
 		void print();
 
 		//getter
-		std::string getName();
+		const std::string& getName() const;
 	private:
 		std::string name;
 		int maxHealth, currentHealth, damage;
